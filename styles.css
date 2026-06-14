@@ -217,7 +217,7 @@ button:active {
     color: #0F172A;
 }
 
-@media screen and (max-width:750px) {
+@media screen and (max-width:550px) {
     .container {
         margin: 0;
         padding: 0;

@@ -5,20 +5,21 @@
     font-family: 'segor UI', roboto, oxygen, Ubuntu, cantarell, sans-serif;
 }
 
-body {
+
+
+.fixo {
+    position: relative;
+    width: 671px;
+    height: 173px;
+    left: -13px;
+}
+
+.container {
     background-color: #0F172A;
     color: #f8fafc;
     line-height: 1.6;
     min-height: 100vh;
     padding: 2rem 1rem;
-}
-
-.fixo {
-    width: 940px;
-    height: 173px
-}
-
-.container {
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -77,6 +78,9 @@ span {
 }
 
 .btn-generate {
+    position: relative;
+    left: 186px;
+    top: -5px;
     background: linear-gradient(135deg, #38bdf8, #0ea5e9);
     color: #ffff;
     border: none;
@@ -96,7 +100,7 @@ span {
     box-shadow: 0 10px 25px rgba(56, 189, 248, 0.3);
 }
 
-.btn-generate:desabled {
+button:active {
     opacity: 0.6;
     cursor: not-allowed;
     transform: none;
@@ -205,18 +209,43 @@ span {
     background-color: white;
 }
 
-/* responsividade */
-@media (max-width: 768px) {
-    .header h1 {
-        font-size: 1.6rem;
+button:active {
+    opacity: 0.6;
+    cursor: pointer;
+    transform: none;
+    background: rgb(40, 40, 245);
+    color: #0F172A;
+}
+
+@media screen and (max-width:750px) {
+    .container {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        align-items: center;
     }
 
-    .tabs {
-        justify-content: space-between;
+    .fixo {
+        position: relative;
+        width: 363px;
+        height: 173px;
+        left: -15px;
     }
 
-    .tab-btn {
-        padding: 0.8rem 1rem;
-        font-size: 0.9rem;
+    .btn-generate {
+        position: relative;
+        left: 72px;
+        top: 1px;
     }
+
+    .header h1{
+        align-items: center;
+        position: relative;
+        left: 7px;
+        top: 6px;
+        font-size: 27px;
+        width: 360px;
+        height: auto;
+        }
 }
